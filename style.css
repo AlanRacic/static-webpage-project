@@ -1,0 +1,688 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(236, 231, 231);
+}
+
+.blackBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #262626;
+}
+.blackBar .logo {
+    background: url("https://public-assets.envato-static.com/assets/logos/envato_market-a5ace93f8482e885ae008eb481b9451d379599dfed24868e52b6b2d66f5cf633.svg") no-repeat center;
+    width: 160px;
+    height: 20px;
+    text-indent: -999px;
+    overflow: hidden;
+}
+.blackBar .buyButton {
+    font-size: 14px;
+    padding: 10px 22px;
+    color: white;
+    text-decoration: none;
+    background-color: #82b440;
+    border-radius: 5px; 
+    transition: all 0.5s;     
+}
+.blackBar .buyButton:hover {
+    background-color: #6e9838;
+} 
+
+.mainHeader {
+    background-color: #ffffffd9;
+}
+.mainHeader .layoutWrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.mainHeader .logo {
+    background: url("https://demo.tophivetheme.com/html/picwik/assets/img/logo-4.png") no-repeat center;
+    width: 150px;
+    height: 100px;
+    text-indent: -999px;
+    overflow: hidden;
+    margin-bottom: -30px;
+}
+.mainHeader .mainNavigation > ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.mainHeader .mainNavigation li {
+    position: relative;
+}
+.halfRedLine {
+    position: relative;   
+    padding: 15px;
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s;
+}
+.halfRedLine:hover, 
+.halfRedLine.selected {
+    color:#d74d52
+}
+.halfRedLine:before {
+    content: "";
+    position: absolute; 
+    bottom: 10px; right: 15px;
+    width: 0;   
+    background: #d74d52;
+    height: 1px;
+    transition: width 0.3s;
+}
+.halfRedLine:hover:before, 
+.halfRedLine.selected::before {
+   width: 30px;
+}
+
+.mainHeader .mainNavigation .dropdown {
+    list-style: none; margin: 0; padding: 0;
+    position: absolute; display: none;
+    left: 15px; top: 45px;
+    background: #fff;
+}
+.mainHeader .mainNavigation li:hover .dropdown {
+    display: block;
+}
+.mainHeader .mainNavigation .dropdown li {
+    width: 200px;
+    padding: 15px;
+}
+
+.mainHeader .socialNavigation ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.mainHeader .socialNavigation a {
+    display: block;
+    width: 40px; height: 40px;
+    text-indent: -999px;
+    overflow: hidden;
+    background: url("https://cdn-icons-png.flaticon.com/512/733/733614.png") no-repeat center;
+    background-size: 20px;
+}
+.mainHeader .socialNavigation .facebook {
+    background-image: url("/multimedia/images/logo/facebook.png");
+}
+.mainHeader .search button {
+    display: block;
+    width: 40px; height: 40px;
+    text-indent: -999px;
+    overflow: hidden;
+    border: 0; margin: 0; padding: 0;
+    cursor: pointer;
+    background: url("https://cdn-icons-png.flaticon.com/512/149/149852.png") no-repeat center;
+    background-size: 20px;
+}
+.slides {
+    list-style: none;
+    margin: 0; padding: 0;
+}
+.slide {
+    background: transparent url("https://demo.tophivetheme.com/html/picwik/assets/img/slider3.png") no-repeat center/cover;
+}
+.slide .layoutWrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 180px 0;
+}
+.slide .title {
+    font-size: 40px;
+    line-height: 1.5;
+    margin: 0; padding: 0;
+    max-width: 600px;
+}
+.slide .text {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 20px 0 0; padding: 0;
+    max-width: 600px;
+}
+.slide .discoverButton {
+    display: inline-block;
+    font-size: 16px; margin-top: 40px;
+    font-weight: bold;
+    padding: 15px 30px;
+    color: #d74d52;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 5px; 
+    transition: all 0.5s;     
+}
+.slide .discoverButton:hover {
+    color: white;
+    background-color: #d74d52;
+} 
+.mainFeatures{
+    background-color: rgb(241, 238, 238);
+   padding-top: 60px;
+}
+.mainFeatures h1 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.5;
+    color: #262626;
+    text-align: center;
+}
+
+.mainFeatures h1 .redLink {
+    font-weight: 700;
+    color: #d74d52;
+    text-decoration: none;
+    position: relative;
+}
+.mainFeatures h1 .redLink:before {
+    content: ''; position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 1px;
+    background: #d74d52;
+    transition: right 0.4s;
+}
+.mainFeatures h1 .redLink:hover:before {
+    right: 100%;
+}
+.mainFeatures .container {
+    display: flex;
+    padding-top: 60px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.mainFeatures  .feature {
+    background-color: #fff;
+    margin: 15px;
+    padding: 40px 15px;
+    text-align: center;
+    line-height: 1.5;
+}
+ .mainFeatures .featureTitle {
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+ .mainFeatures .featureText {
+    text-align: justify;
+    padding-left: 30px; padding-right: 30px;
+} 
+.statistics {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    justify-content: center;
+}
+.statistics li {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px;
+    padding: 20px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+.statistics .clients, 
+.statistics .courses,
+.statistics .satisfaction {
+    background: transparent no-repeat center;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 10px 15px;
+    vertical-align: middle;
+    position: relative;
+    bottom: 6px;
+}
+.statistics .clients {
+    background-image: url("https://demo.tophivetheme.com/html/picwik/assets/img/counter-shape-1.png");
+    color: orange;
+    
+}
+.statistics .courses {
+    background-image: url("https://demo.tophivetheme.com/html/picwik/assets/img/counter-shape-2.png");
+    color: rgb(179, 85, 85);
+}
+.statistics .satisfaction {
+    background-image: url("https://demo.tophivetheme.com/html/picwik/assets/img/counter-shape-3.png");
+    color: rgb(94, 180, 94);
+}
+
+.courseContainer {
+    display: flex;
+}
+.course {
+    background: url("https://demo.tophivetheme.com/html/picwik/assets/img/course-form-bg.jpg") no-repeat center/cover;
+    width: 600px;
+    padding: 20px;
+    margin-left: 100px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.course .courseTitle {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+} 
+.course .courseText {
+    font-size: 16px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding-bottom: 75px;
+
+}
+.course .courseText img {
+    position: relative;
+    margin-bottom: -3px;
+}
+.course .courseTextLink {
+    color: #d74d52;
+    font-weight: 700;
+    text-decoration: none;
+}
+.course .selectCourseButton {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold; 
+    padding:21px 30px;
+    color:#d74d52;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 5px;
+    margin: 50px 167px;    
+}
+.course .selectCourseButton:hover {
+    color: white;    
+    background-color: #d74d52;
+}
+.course .formData {
+    display: flex;
+    flex-wrap: wrap;   
+}
+.course .formItem {
+    width: 50%; padding: 15px;
+    box-sizing: border-box;
+}
+.course .formItem input {
+    font-size: 16px;
+    display: block; width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 0; background: white;
+    box-shadow: 0 10px 15px #0000001f;
+}
+.course .formItem:last-child {
+    width: 100%;
+}
+.submitButton {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 30px;
+    background-color: #d74d52;
+    color: white;
+    border-radius: 5px ;
+    margin-left: 14px;
+}
+ .courseAside {
+    line-height: 1.5;   
+    position: relative;
+    margin-top: 100px;
+}
+.courseAside:after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+    background: url("https://demo.tophivetheme.com/html/picwik/assets/img/course-bg.jpg") no-repeat transparent center/cover; 
+    opacity: 0.1;
+}
+.courseAsideText{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 60px 60px 15px;
+}
+.courseAsideTitle {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.courseAside .image {
+  margin-left: 20px;
+}
+.recentCourses {
+    width: 680px;
+    margin: 0 auto;
+    text-align: center ;
+    padding: 30px;
+}
+.recentCoursesTitle {
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 70px;
+    padding-bottom: 35px;
+}
+.recentCoursesText {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.courseOptionSection {
+    background-color: rgb(236, 231, 231);
+}
+.courseOptionContainer {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.courseOption {
+    background-color: white;
+    padding-bottom: 40px;
+    margin: 15px;
+}
+
+.courseOption:hover img { 
+   transform: scale(1.3); 
+}
+.courseOption img {
+    transition: all .2s; 
+    display: block;
+    width: 100%;
+} 
+.imageContainer {
+    overflow: hidden;
+}
+.courseOptionTitle {
+    font-size: 30px;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    font-weight: bold;
+    text-decoration: solid underline rgb(77, 239, 77) 5px;
+}
+.courseOptionText {
+    font-size: 20px;
+    font-weight: 500;
+    padding-right: 80px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    line-height: 1.5;
+    text-align: left
+}
+.courseBy {
+font-size: 13px;
+font-weight: 700;
+line-height: 1.5;  
+padding: 2px 10px;
+margin-left: 20px;
+background-color: #ffd8d9;; 
+text-decoration: none;
+color: #ad4444;
+}
+.teachers {
+  font-size: 30px;
+  font-weight: 320;
+  line-height: 1.5;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.teachersTitle {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 60px;
+}
+.teachersRedAnimation {
+font-weight: bold;
+color: #d74d52;
+position: relative;
+    
+}
+.teachersRedAnimation:before {
+content: "";
+  position: absolute;
+  bottom: 0; right: 0; left: 0;
+  background: #d74d52;
+  height: 1px;
+  transition: right 0.5s;
+}
+.teachersRedAnimation:hover:before {
+right: 100%;
+} 
+.teachersRedLink {
+font-weight: bold;
+color: black
+}
+.teachersRedLink a {
+    text-decoration: none;
+    color: #d74d52;
+}
+.teachersBottomText {
+    font-size: 16px ;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color:#d74d52
+}
+.teachers img {
+    width: 20px;
+    height: 20px;
+    padding-left: 20px;
+    vertical-align: middle;
+   }
+.videoSection {
+    display: flex;
+    padding-top: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.videoBackground {
+    background: url("https://demo.tophivetheme.com/html/picwik/assets/img/video-bg.jpg") no-repeat center/cover;
+    width: 50%; flex-shrink: 0;
+    box-sizing: border-box;
+    position: relative;
+    left: 70px;
+}
+.videoAside {
+    width: 50%; flex-shrink: 0;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    left: -70px; top: 70px;
+}
+.videoAsideRedBox {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 30px 50px;
+    margin: auto;
+    margin-bottom: 70px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    background-color: #d74d52;
+}
+.videoAsideText {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    padding: 35px;
+    margin-left: 35px;
+    margin-right: 35px;
+    text-align: left;
+}
+.videoAsideText a {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    transition: color 0.5s;
+}
+.videoAsideText a:hover {
+    color: #d74d52;
+}
+.videoAsideText a:hover:after {
+    margin-left: 15px;
+}
+.videoAsideText a:after {
+    content: '>';
+    font-weight: normal;
+    font-size: 12px;
+    margin-left: 10px;
+    vertical-align: middle;
+    position: relative; bottom: 2px;
+    transition: margin-left 0.5s;
+}
+.map {
+    font-size: 16px;
+    padding-bottom: 60px;
+    font-weight: bold;
+    color: #d74d52;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    transition: color 0.5s;
+}
+.map:hover:after {
+    margin-left: 15px;
+}
+.map:after {
+ content: ">";   
+ font-size: 12px;
+ margin-left: 10px;
+ font-weight: normal;
+ vertical-align: middle;
+ position: relative; bottom: 2px;
+ transition: margin-left 0.5s;
+}
+.footerInstagram {
+    font-size: 25px;    
+    font-weight: 600;
+    margin-top: 120px;
+    margin-bottom: 100px;
+    text-align: center;  
+    vertical-align: middle;
+    letter-spacing: 1px;
+}
+.footerInstagramIcon {
+ width: 30px;
+ height:30px;
+ padding-right: 30px;
+ margin-bottom: -6px;
+}
+.footerInstagramPictures {
+ display: flex;   
+}
+.footerInstagramPictures .instagramImageContainer {
+    max-width: 25%;
+    display: block;
+}
+.instagramImageContainer img {
+    transition: all 0.2s;
+}
+.instagramImageContainer:hover img {
+    transform: scale(1.3);
+}
+.instagramImageContainer {
+    overflow: hidden;
+    position: relative;
+}
+.redOverlay {
+    background-color: #d74d52;
+    top: 0; bottom: 0; right: 0; left: 0;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+.instagramImageContainer:hover .redOverlay {
+    opacity: 0.6;
+
+}
+
+/*  
+.courseOption:hover img { 
+    transform: scale(1.3); 
+ }
+ .courseOption img {
+     transition: all .2s; 
+     display: block;
+     width: 100%;
+ } 
+ .imageContainer {
+     overflow: hidden;}
+     */
+.copyright {
+    font-size: 14px;
+    font-weight: normal;
+ }
+ .copyright .redText {
+    font-weight: 500;
+    color: #d74d52;
+    text-decoration: none;
+ }
+
+.footerLogo{
+    background: url("https://demo.tophivetheme.com/html/picwik/assets/img/logo-4.png") no-repeat center;
+    width: 150px;
+    height: 100px;
+    text-indent: -999px;
+    overflow: hidden;   
+}
+.footerWrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+
+}
+.footerNavigation {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+.footerNavigation  a{
+    font-size: 14px;
+    color: black;
+    font-weight: normal;
+    text-decoration: none;
+    list-style: none;
+    padding: 15px;
+}
+.topButton {
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid black;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #d74d52;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    transition: color 0.5s;
+}
+.topButton:hover {
+    color: black;
+}

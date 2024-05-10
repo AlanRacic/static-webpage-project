@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Zadaća-04-CSS</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+            integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <nav class="blackBar">
+            <a href="#" class="logo">envato market</a>
+            <a class="buyButton" href="#"> Buy now</a>
+        </nav>
+        <header class="mainHeader">
+            <div class="layoutWrapper">
+                <a class="logo" href="#">Picwic logo</a>
+                <nav class="mainNavigation">
+                    <ul>
+                        <li>
+                            <a class="halfRedLine selected" href="#"> Home</a>
+                            <ul class="dropdown">
+                                <li>Home 1</li>
+                                <li>Home 2</li>
+                                <li>Home 3</li>
+                            </ul>
+                        </li>
+                        <li><a class="halfRedLine" href="#">About</a></li>
+                        <li><a class="halfRedLine" href="#">Academics</a></li>
+                        <li><a class="halfRedLine" href="#">Discover</a></li>
+                        <li><a class="halfRedLine" href="#">History</a></li>
+                        <li>
+                            <a class="halfRedLine" href="#">Pages</a>
+                            <ul class="dropdown">
+                                <li>Apply</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="halfRedLine" href="#">News</a>
+                            <ul class="dropdown">
+                                <li>News</li>
+                                <li>News Single</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="socialNavigation">
+                    <ul>
+                        <li><a class="instagram" href="#">Instagram</a></li>
+                        <li><a class="facebook" href="#">Facebook</a></li>
+                        <li><a class="google" href="#">Goggle</a></li>
+                        <li><a class="twitter" href="#">Twitter</a></li>
+                    </ul>
+                </nav>
+                <form class="search">
+                    <button type="button">Search</button>
+                </form>
+            </div>
+        </header>
+        <ul class="slides">
+            <li class="slide">
+                <div class="layoutWrapper">
+                    <h1 class="title">
+                        Professional development for coaches and leaders
+                    </h1>
+                    <p class="text">
+                        So students experience better learning, better life.
+                    </p>
+                    <a class="discoverButton" href="#">
+                        Discover Academics Coaching
+                    </a>
+                </div>
+            </li>
+        </ul>
+        <section class="mainFeatures">
+            <h1>
+                Since 2000 we've been partnering with education leaders to
+                <br />
+                <a class="redLink" href="#">increase equity and achievement </a
+                >for all students.
+            </h1>
+            <ul class="container">
+                <li class="feature">
+                    <img
+                        src="https://demo.tophivetheme.com/html/picwik/assets/img/icon1.png"
+                        alt="Person with laptop icon"
+                    />
+                    <h2 class="featureTitle">Online coaching</h2>
+                    <p class="featureText">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Incidunt cum mollitia voluptatum labore optio eum
+                        est?
+                    </p>
+                </li>
+                <li class="feature">
+                    <img
+                        src="https://demo.tophivetheme.com/html/picwik/assets/img/icon2.png"
+                        alt="Chart icon"
+                    />
+                    <h2 class="featureTitle">Consultation</h2>
+                    <p class="featureText">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Incidunt cum mollitia voluptatum labore optio eum
+                        est?
+                    </p>
+                </li>
+                <li class="feature">
+                    <img
+                        src="https://demo.tophivetheme.com/html/picwik/assets/img/icon3.png"
+                        alt="Notebook icon"
+                    />
+                    <h2 class="featureTitle">Online coaching</h2>
+                    <p class="featureText">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Incidunt cum mollitia voluptatum labore optio eum
+                        est?
+                    </p>
+                </li>
+            </ul>
+            <ul class="statistics">
+                <li><span class="clients">6500+</span> Happy Clients</li>
+                <li><span class="courses">200+</span> Online Courses</li>
+                <li><span class="satisfaction">100%</span>Satisfaction</li>
+            </ul>
+        </section>
+        <div class="courseContainer">
+            <form
+                class="course"
+                action=""
+                method="post"
+                autocomplete="off"
+                enctype="multipart/form-data"
+                novalidate
+            >
+                <h1 class="courseTitle">Request Free Course</h1>
+                <p class="courseText">
+                    <img
+                        src="	https://demo.tophivetheme.com/html/picwik/assets/img/icon-new.png"
+                        alt="new icon"
+                    />
+                    Receive <a class="courseTextLink" href="#">5 FREE </a>coach
+                    training demonstrations!
+                </p>
+                <a class="selectCourseButton" href="#">Select Your Course ></a>
+                <div class="formData">
+                    <div class="formItem">
+                        <input
+                            type="text"
+                            name="firstName"
+                            id="inputFirstName"
+                            placeholder="First name"
+                        />
+                    </div>
+                    <div class="formItem">
+                        <input
+                            type="text"
+                            name="lastName"
+                            id="inputlastName"
+                            placeholder="Last name"
+                        />
+                    </div>
+                    <div class="formItem">
+                        <input
+                            type="email"
+                            name="email"
+                            id="inputEmail"
+                            placeholder="Email"
+                        />
+                    </div>
+                    <div class="formItem">
+                        <input
+                            type="tel"
+                            pattern="[0-9]{8-12}"
+                            name="phone"
+                            id="inputPhoneNumber"
+                            placeholder="Phone"
+                        />
+                    </div>
+                    <div class="formItem">
+                        <input
+                            type="url"
+                            name="website"
+                            id="inputWebsite"
+                            placeholder="Website"
+                        />
+                    </div>
+                </div>
+                <div class="submitArea">
+                    <button class="submitButton" type="submit">
+                        Get Free Course Now
+                    </button>
+                </div>
+            </form>
+            <section class="courseAside">
+                <p class="courseAsideText">
+                    As an adaptive learning center teacher, Andy goes above and
+                    beyond to ensure students with diverse learning needs can
+                    succeed in a general education setting
+                </p>
+                <h2 class="courseAsideTitle">As featured in</h2>
+                <img
+                    class="image"
+                    src="https://demo.tophivetheme.com/html/picwik/assets/img/client.png"
+                    alt="logos"
+                />
+            </section>
+        </div>
+        <section class="recentCourses">
+            <h1 class="recentCoursesTitle">Recent Courses</h1>
+            <p class="recentCoursesText">
+                Whether you’re considering a foundation course or an
+                undergraduate degree master's or a PhD, academics is a place
+                where students thrive.
+            </p>
+        </section>
+        <section class="courseOptionSection">
+            <ul class="courseOptionContainer">
+                <li class="courseOption">
+                    <div class="imageContainer">
+                        <img
+                            src="https://demo.tophivetheme.com/html/picwik/assets/img/course-item1.jpg"
+                            alt="Person with laptop"
+                        />
+                    </div>
+                    <h1 class="courseOptionTitle">$23</h1>
+                    <p class="courseOptionText">
+                        Swearing reduces pain but using a taboo hand...
+                    </p>
+                    <a href="#" class="courseBy">Course by James Bond</a>
+                </li>
+                <li class="courseOption">
+                    <div class="imageContainer">
+                        <img
+                            src="https://demo.tophivetheme.com/html/picwik/assets/img/course-item2.jpg"
+                            alt="Person with mobile phone"
+                        />
+                    </div>
+                    <h1 class="courseOptionTitle">$23</h1>
+                    <p class="courseOptionText">
+                        Swearing reduces pain but using a taboo hand...
+                    </p>
+                    <a href="#" class="courseBy">Course by Chalie Brown</a>
+                </li>
+                <li class="courseOption">
+                    <div class="imageContainer">
+                        <img
+                            src="https://demo.tophivetheme.com/html/picwik/assets/img/course-item3.jpg"
+                            alt="Book shelf"
+                        />
+                    </div>
+                    <h1 class="courseOptionTitle">$23</h1>
+                    <p class="courseOptionText">
+                        Swearing reduces pain but using a taboo hand...
+                    </p>
+                    <a href="#" class="courseBy">Course by John Snow</a>
+                </li>
+            </ul>
+        </section>
+        <section class="teachers">
+            <h1 class="teachersTitle">See What Teachers Have To Say</h1>
+            <p class="teachersText">
+                "Academics was committed to my success from the moment I
+                attended an Open House. With the support of caring
+                <span class="teachersRedAnimation"
+                    >advisors, professors, and staff</span
+                >
+                i was able to thrive in courses, gain recognition through
+                scholarships, and finish
+                <span class="teachersRedLink"
+                    >with confidence in my
+                    <a href="#">@academics </a>abilities."</span
+                >
+            </p>
+            <a class="teachersBottomText" href="#"
+                >@AcademicsUniversity
+                <img
+                    src="/multimedia/images/logo/twitter.png"
+                    alt="twitter icon"
+            /></a>
+        </section>
+        <section class="videoSection">
+            <div class="videoBackground"></div>
+            <div class="videoAside">
+                <h1 class="videoAsideRedBox">Visit Us</h1>
+                <p class="videoAsideText">
+                    <img
+                        src="https://demo.tophivetheme.com/html/picwik/assets/img/v-icon1.png"
+                        alt="Compas Icon"
+                    />
+                    Princeton offers admission information sessions and
+                    student-led tours to campus visitors <br />
+                    <a href="#">Learn more</a>
+                </p>
+                <p class="videoAsideText">
+                    <img
+                        src="https://demo.tophivetheme.com/html/picwik/assets/img/v-icon2.png"
+                        alt="Map Icon"
+                    />
+                    Princeton offers admission information sessions and
+                    student-led tours to campus visitors <br />
+
+                    <a href="#">Learn more</a>
+                </p>
+                <a class="map" href="#">View Our Campus Map</a>
+            </div>
+        </section>
+
+        <p class="footerInstagram">
+            <img
+                class="footerInstagramIcon"
+                src="/multimedia/images/logo/mail.png"
+                alt="Instagram icon"
+            />
+            Instagram
+        </p>
+        <section class="footerInstagramPictures">
+            <div class="instagramImageContainer">
+                <img
+                    src="https://demo.tophivetheme.com/html/picwik/assets/img/gallery-1.jpg"
+                    alt=""
+                />
+                <div class="redOverlay"></div>
+            </div>
+            <div class="instagramImageContainer">
+                <img
+                    src="https://demo.tophivetheme.com/html/picwik/assets/img/gallery-2.jpg"
+                    alt=""
+                />
+                <div class="redOverlay"></div>
+            </div>
+
+            <div class="instagramImageContainer">
+                <img
+                    src="https://demo.tophivetheme.com/html/picwik/assets/img/gallery-3.jpg"
+                    alt=""
+                />
+                <div class="redOverlay"></div>
+            </div>
+
+            <div class="instagramImageContainer">
+                <img
+                    src="https://demo.tophivetheme.com/html/picwik/assets/img/gallery-4.jpg"
+                    alt=""
+                />
+                <div class="redOverlay"></div>
+            </div>
+        </section>
+        <footer class="mainFooter">
+            <div class="footerWrapper">
+                <p class="copyright">
+                    © Copyright 2021 <a class="redText" href="#">tophive</a>.
+                    All Rights Reserved.
+                </p>
+                <a class="footerLogo" href="#">Picwic logo</a>
+                <ul class="footerNavigation">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+        </footer>
+        <a class="topButton" href="#">Top</a>
+    </body>
+</html>
